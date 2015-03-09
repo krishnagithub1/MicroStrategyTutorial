@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome To MicroStrategy Learning Application</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.bs-example{
+		margin: 10px;
+	}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <ul class="nav nav-tabs">
+       <li class="active"><a data-toggle="tab" href="#sectionA"><STRONG>HOME</STRONG></a></li>
+        <!-- <li><a data-toggle="tab" href="#sectionB"><STRONG>About</STRONG></a></li>  -->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><STRONG>Learning Mode</STRONG> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#pageone"><STRONG>Basics</STRONG></a></li>
+                <li><a data-toggle="tab" href="#pagetwo"><STRONG>Intermediate</STRONG></a></li>
+				<li><a data-toggle="tab" href="#pagethree"><STRONG>Advanced</STRONG></a></li>
+                <li><a data-toggle="tab" href="#pagefour"><STRONG>ADVANCED Part2</STRONG></a></li>
+				<li><a data-toggle="tab" href="#pagefive"><STRONG>ADVANCED Part3</STRONG></a></li>
+                <li><a data-toggle="tab" href="#pagesix"><STRONG>ADVANCED Part4</STRONG></a></li>
+            </ul>
+        </li>
+		
+	<!-- 	<li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><STRONG>Quiz Mode</STRONG> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            	
+		<li><a data-toggle="tab" href="#sectionc"><STRONG>Basic Quiz Mode</STRONG></a></li>
+        <li><a data-toggle="tab" href="#sectiond"><STRONG>Advanced Quiz Mode</STRONG></a></li>
+		</li> -->
+    </ul>
+		
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+           
+            <H1>Welcome To MicroStrategy Learning Application</H1>
+			<P> This Application will help you to learn MicroStrategy basic and Advanced Concept.</P>
+			<P> In this Application After learning we had created a Quiz mode ,which will help you to test your knowledge.</P>
+			<P>Contents of this application are collected from different freeware knowledge sharing sites.</P>
+			<P>This Application is designed by KRISHNA AGRAWAL an MSTR Expertise.</P>
+			<P>We also conduct online training for MicroStrategy.</P>
+			<P> Please feel free to write us on krishna-agrawal@hotmail.com if you have any queries or facing any issues.</p>
+			
+			
+			
+        </div>
+        <!-- <div id="sectionB" class="tab-pane fade">
+            <h3>ABOUT</h3>
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+        </div> -->
+		
+		     <div id="sectionc" class="tab-pane fade">
+            <h3>Coming Soon</h3>
+            
+        </div>
+        <div id="sectiond" class="tab-pane fade">
+            <h3>Coming Soon2</h3>
+            
+        </div>
+        <div id="pageone" class="tab-pane fade">
+            <h3>Basics</h3>
+           
+<p><strong>What is MicroStrategy</strong></p>
+<p>MicroStrategy is a Business Intelligence (BI) solution by MicroStrategy, Inc., a BI, enterprise reporting and on-line analytical processing (OLAP) software providing company. MicroStrategy is a fully integrated BI platform that makes Business Intelligence faster, easier, and more user-friendly and delivers high performance, sophisticated analytics and rapid report creation. It allows a non-technical person to build state-of-the-art reports. This document introduces the basic process to create reports using MicroStrategy.</p>
+<p><strong>What are the components present in MicroStrategy?</strong></p>
+<p>Before we delve into the actual activity of creating the report, let us first get familiar with the various components of MicroStrategy, depicted in Figure 1 below.</p>
+<p><strong>What is Intelligence Server (I-Server)</strong></p>
+<p>The core engine of the MicroStrategy platform comprises of Reporting Services, Analytical Services and OLAP Services.</p>
+<p><strong>What is Metadata?</strong></p>
+<p>The database repository where definitions of all MicroStrategy objects are stored. Metadata could be hosted on most databases. In simple words, Metadata could be considered as the heart of MicroStrategy environment.</p>
+<p>MicroStrategy metadata contains datawarehouse connection information, project settings and microstrategy object definitions.</p>
+<p><strong>What is Data Warehouse?</strong></p>
+<p>This is the database that holds the business data collected and processed by the external application. MicroStrategy pulls and processes this data in order to create various reports.</p>
+<p><strong>How to create a New Project in MSTR?</strong></p>
+<p>In MicroStrategy, a project is a collection of objects that you create. It also stores information about the warehouse database.</p>
+<p>To create a new project, follow the steps below:</p>
+<ul>
+<li>Open <strong>Desktop</strong> and click on the <strong>Create New Project</strong> option under the <strong>Schema</strong> menu. Click on the <strong>Create Project </strong>button on this screen.</li>
+<li>Provide the information asked on this popup dialog (<strong>Project Name</strong> is mandatory) and click on the <strong>OK</strong> button. MicroStrategy will create the project for you and come back to the screen of Figure 1. Ignore the remaining steps of the popup and click on <strong>OK</strong>. The project will appear in the Desktop. Select the project and go to <strong>Schema</strong> &gt; <strong>Warehouse Catalog</strong>.</li>
+<li>Select the Database Instance that you want to use for connecting to the required warehouse database from the dropdown.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>How to Set up the Warehouse Catalog?</strong></p>
+<p>The Warehouse catalog is mainly used to configure the database connectivity for the Warehouse database. To set up the catalog, follow the steps below:</p>
+<ul>
+<li>Select the project and go to <strong>Schema</strong> &gt; <strong>Warehouse Catalog</strong>.</li>
+</ul>
+<p>Select the Database Instance that you want to use for connecting to the required warehouse database from the <strong>Select current database instance</strong> dropdown.</p>
+<p><strong>What are Schema Objects and how they are created?</strong></p>
+<p>Once you have selected the tables, the next step is to create the basic building blocks (schema objects) of your project. These schema objects are tightly coupled with the tables you have selected in Step 3. Expand the <strong>Schema Objects</strong> section under the project and you will see the list of schema object types. Typical schema objects are:</p>
+<p><strong>What are Facts?</strong></p>
+<p>Facts are numeric data values that you want to show on the report, for e.g., sales, revenue, profit etc. Select the source table and then the column on which the fact will be based on.</p>
+<p><strong>What is Attribute?</strong></p>
+<p>An attribute is the context of the fact. Without an attribute, the facts won&rsquo;t make any sense. For e.g., month, region, branch, state etc.</p>
+<ul>
+<li>Similar to Fact, select the source table and the column. Repeat this process for all the tables that consist of the attribute.</li>
+</ul>
+<p>A typical attribute comprises of 2 forms &ndash; the ID, which is used in the query joins and the description which is used for the display. The table highlighted in bold in the screenshot below is the primary table for the attribute.</p>
+<ul>
+<li>Click on the <strong>New</strong> button to create the description form. It will allow you to select the column for the description. The description is always from the primary table.</li>
+</ul>
+<p><strong>What are Metrics?</strong></p>
+<p>Mere facts won&rsquo;t make any sense. You need to aggregate the facts, perform some computations based on some formulae, and apply conditions to the facts to arrive at the data that is useful to the audience of the report. A metric is a processed fact.</p>
+<p>A metric could be derived from one or more facts. You could also create a compound metric, which is derived from one or more metrics.&nbsp;MicroStrategy provides commonly used functions to aggregate and/or compute values from the facts. It also provides a way to create your own computational formulae.</p>
+<p>Select the fact you want to use for the metric. You can also choose the functions for your calculation. For doing so, click on the <strong>f(x)</strong> button which will present you the list of the available functions. Each function will ask for necessary parameters. Please provide them when prompted for.</p>
+<p>&nbsp;</p>
+<p><strong>What are Filters?</strong></p>
+<p>A filter defines the condition that extracts only the required rows from the underlying tables.</p>
+<ul>
+<li>Select the attribute that you want to use in the filtering condition and then create the condition expression using the parameters available on the screen.</li>
+</ul>
+<p><strong>How to Creating Basic Report?</strong></p>
+<p>Once the schema objects and public objects are created, you pick the necessary objects (mix of schema objects and public objects) and form a basic report. You can apply necessary formatting at this level.</p>
+<ul>
+<li>Select the attributes from the <strong>Object Browser</strong> and add them to the rows.</li>
+<li>Select the metrics from the <strong>Object Browser</strong> and add them to the columns.</li>
+<li>If you need any filters in the report, select them from the <strong>Object Browser</strong> and drag them to the <strong>Report Filter</strong> window.</li>
+<li>Your report is ready. Execute the report by clicking on the <strong>Grid</strong> button in the button bar.</li>
+</ul> </P>
+        </div>
+        <div id="pagetwo" class="tab-pane fade">
+            <h3>MSTR Architect</h3>
+            <p><strong>What are the tasks that you can perform with the MicroStrategy Architect?</strong></p>
+<p>Initially populate the metadata with project definition and parameters, schema objects and create schema objects</p>
+<p><strong>What is difference between 2 ,3 , 4 tier connection?</strong></p>
+<p>In 2 tier architecture, the MicroStrategy Desktop itself queries aganist the Data warehouse and the Metadata with out the Intermediate tier of the Intelligence server.</p>
+<p>The 3 Tier architecture comprises a Intelligence server between MicroStrategy Desktop and the data Warehouse and the Metadata.</p>
+<p>The 4 tier architecture is same as 3 tier except it has a additional component of MicroStratey Web.</p>
+<p>Intelligence Server is the architectural foundation of the MicroStrategy platform. It serves as a central point for the MicroStrategy metadata so you can manage thousands of end user requests.</p>
+<p>You are very limited in what you can do with a 2-tier architecture. Things like clustering, mobile, distribution services, report services, OLAP services, scheduling, governing, I cubes, project administration are only available via Intelligence Server.</p>
+<p><strong>When a change is made in 2 tier &ndash; is it reflected in 3 tier?</strong></p>
+<p>No it is not reflected. Following are the methods by which we can reflect it in 3 tier.</p>
+<ul>
+<li>Update the schema in 2-tier. Restart the MicroStrategy Intelligence Server. Recommended method by MSTR.</li>
+<li>Update the schema in 2-tier and reload the project from the Project Monitor.</li>
+</ul>
+<p><strong>What is heterogeneous mapping?</strong></p>
+<p>There are no restrictions on the names for the columns used in the expressions of a given attribute form. Heterogeneous mapping allows the engine to perform joins on unlike column names. If the user defines more than one expression for a given form, heterogeneous mapping will automatically take place when tables and column names require it.</p>
+<p>For example, because different source systems store Date information in various contexts, a data warehouse may have multiple columns in different tables which all represent the concept of 'Date'. The ID form of the attribute 'Date' may contain two expressions. The DATE_ID column occurs in the LU_DATE table as well as in two other tables. The elements in these columns correspond to elements in the ORDER_DATE column in the order_detail and ORDER_FACT tables.</p>
+<p>Heterogeneous Mapping of Attribute Forms.</p>
+<p><strong>Why do we go for parent child relationship?</strong></p>
+<p>While establishing the relationship between attributes one can either look from business hierarchy point of view and the attribute higher in the hierarchy becomes parent of the attribute lower in the hierarchy. Parent and Child follow a one-to-many relationship. Example Time hierarchy Year &gt; Month &gt; Date. Here Year would be parent of Month and Date and Month parent of Date.</p>
+<p>We can also identify Parent-Child relationship from database design point of view. Here in a table the Primary Key uniquely identifies the other columns in the table and hence qualifies as child of all the other attributes from the table, in the same ways as a child in real world identifies his father (at least the biological one).</p>
+<p><strong>What is a compound attribute?</strong></p>
+<p>A compound attribute has its value determined by an expression which combines two or more columns in a database to create a new column</p>
+<p><strong>What are different kinds of objects in Microstrategy?</strong></p>
+<p>Configuration Objects: Configuration objects are MicroStrategy objects which can be re used in multiple projects and they appear in the system layer. Ex: Database Instances, Users, Login ID's, Schedules</p>
+<p>Schema Objects: The building block of BI. Schema objects are directly mapped to a column or columns in the database. Attributes, Facts, Functions &amp; Operators, Hierarchies, Partition Mappings, Tables &amp; Transformations</p>
+<p>Public Objects: Objects that generate analytical data and are built on other schema objects or public objects. Also called as application objects. Ex: Consolidation, Custom Groups, Drill Maps, Reports, Documents, Filters, Prompts, Metrics, Templates and Searches</p>
+<p><strong>How to create a conditional attribute in MicroStrategy Desktop</strong></p>
+<p>A user may want to create an attribute with an alternating expression depending on a certain condition, a conditional attribute. This condition may be implemented through an ApplySimple statement such as the following:</p>
+<p>Types of Attributes</p>
+<p><strong>Simple</strong></p>
+<p>A simple attribute is made up of one or more expressions. With a simple attribute definition, you can define an attribute as a column, constant, or simple expression.</p>
+<p><strong>Implicit Attributes</strong></p>
+<p>An implicit attribute is a virtual or constant attribute that does not physically exist in the database because it is created at the application level. The implicit attribute has its own expression.</p>
+<p><strong>Derived Attributes</strong></p>
+<p>A derived attribute has its value determined by an expression which combines two or more columns in a database to create a new column.</p>
+<p><strong>Compound Key Attribute</strong></p>
+<p>A compound key attribute is an attribute whose primary key is made up by the combination of two or more columns.</p>
+<p><strong>What is a Implicit Attribute?</strong></p>
+<p>An implicit attribute is a virtual or constant attribute that does not physically exist in the database because it is created at the application level. The implicit attribute has its own expression.</p>
+<p><strong>What is a joint child?</strong></p>
+<p>A joint child is Microstrategy way of handling Composite Keys. Composite keys are constituted of two or more columns which together act as unique identifier. To handle this case in Microstrategy we make this set of columns, constituting composite keys, as joint child.</p>
+<p><strong>What are attribute roles?</strong></p>
+<p>A user defines two attributes that have the same definition but play different roles in the business model. In this example, attribute Origin Airport and Destination Airport are defined using the same Lookup Table and Column (Airport_ID). Both attributes share the same forms, or information about them (Description, Location, etc.). In the fact table, however, a separate column exists for each of their roles (Origin_Airport_ID and Destination_Airport_ID).</p>
+<p>When should attribute relationships be modeled as separate attributes in a parent-child relationship and when should they be modeled as forms of the same attribute?</p>
+<p>It is preferable to use separate attributes that are related hierarchically (that is, parent-child relationships) for the following reasons:</p>
+<p>Attributes that exist in a hierarchical relationship can appear independently of each other on a report. If 'Item' and 'Item Category' are modeled as separate attributes, reports may then be designed to report on individual items or whole categories. If 'Item Category' is considered a description (form) of 'Item', it becomes impossible to report on 'Item Category'.</p>
+<p>Attribute forms are not available as metric dimensionality settings. In order to aggregate data at a particular attribute level, that attribute must exist as an attribute. If the attribute is modeled as an attribute form instead, it is possible to aggregate only at the level of the attribute containing the form.</p>
+<p>Attribute forms are not appropriate under the following circumstances:</p>
+<ul>
+<li>When the attribute must be used as an aggregation level (metric dimensionality). For example, customer and state: if a user wishes to calculate sales totals by the states in which customers live, state should be a separate attribute as a parent (or grandparent, and so on) of customer.</li>
+<li>When the attributes exist in a one-to-many or many-to-many relationship. For example, customer status: Presumably, each status will apply to several customers. Modeling status as a form of customer makes it always subordinate to customer, which may impose unnecessary limits on reporting options.</li>
+</ul>
+<p>&nbsp;</p>
+        </div>
+		
+		    <div id="pagethree" class="tab-pane fade">
+            <h3>Drilling ,Fact Extension</h3>
+            <p><strong>How are the drilling options for an attribute decided?</strong></p>
+<p>Based on relation between attributes, hierarchies and their drilling configuration</p>
+<p><strong>What are the two types of Hierarchies?</strong></p>
+<p>System hierarchy: It contains all the project attributes and its available browse paths and is based on relation between attributes.</p>
+<p>User defined Hierarchy: Custom grouping of attributes and define their browse paths.</p>
+<p><strong>Facts</strong></p>
+<p><strong>What is fact extension?</strong></p>
+<ul>
+<li>You can use level extensions to change a fact level, which is a set of attributes that represent the lowest level of detail at which the fact exists in the warehouse.</li>
+<li>Level extensions define how facts can be extended, lowered, or disallowed to other facts across the schema.</li>
+</ul>
+<p><strong>What is fact degradation?</strong></p>
+<p>When facts exist at a higher level than the report display level, you must specify how the Engine degrades the data to the lower level. When you lower the level at which a fact is reported, you are using degradation.</p>
+<p><strong>Types of facts</strong></p>
+<p><strong>Simple facts</strong></p>
+<p>A simple fact is made up of one or more fact expressions. With a simple fact definition, you can define a fact as a column, constant, or simple expression.</p>
+<p><strong>Implicit facts </strong></p>
+<p>An implicit fact is a virtual or constant fact that does not physically exist in the database because it is created at the application level.</p>
+<p><strong>Derived facts</strong></p>
+<p>A derived fact has its value determined by an expression that combines two or more columns in a database to create a new column.</p>
+<p><strong>Metrics</strong></p>
+<p><strong>What are different types of metrics?</strong></p>
+<ul>
+<li>Simple : Simple metrics combine aggregate operators with fact columns or attributes.</li>
+<li>Nested: Metrics that perform multiple aggregations by placing one calculation formula inside another</li>
+<li>Compound : A compound metric is a combination of expressions that, through the use of functions, are themselves metrics.</li>
+<li>Derived</li>
+</ul>
+<p><strong>What is Base Formula?</strong></p>
+<p>Use a simple expression as a base formula to facilitate the creation of more complex metrics.</p>
+<p><strong> What is smart metrics?</strong></p>
+<p>Compound metrics are the ones that are derived by some specific expression involving the different simple metrics. Eg, Total( profit/units Sold). Smart metrics is when the compound metric is calculated with the help of subtotal calculations for every element inside the compound metric. For the above example the smart metric computation can be Total(profit)/Total(Sold).</p>
+<p><strong>What is level metric?</strong></p>
+<p>Level metrics are advanced metrics which are set to be evaluated at a specified attribute level. These are required when in the same report you need to roll up a metric at two different levels side by side. Example is comparison of &ldquo;Revenue from a Region&rdquo; to &ldquo;Revenue from a Country&rdquo;. Here Region and Country are the two different levels.</p>
+<p>The level of a metric, also referred to as dimensionality, allows you to determine the attribute level at which the metric is calculated.</p>
+<p>Default &ndash; Report Level</p>
+<p>The elements needed to specify a level for a metric</p>
+<p>Target - Attribute level at which the metric</p>
+<p>Grouping - Determines the metric aggregation.</p>
+<p>Filtering - governs the relationship between the</p>
+<p>report filter and the calculation of the metric.</p>
+<p><strong> What is purpose of having conditionality in metrics?</strong></p>
+<p><strong>Conditionality associates a filter to the metric calculation. This is an optional component.</strong></p>
+<p><strong> What are the different components of metrics?</strong></p>
+<ul>
+<li>The formula defines the data to be used and the calculations to be performed on the data. The outermost formula must be a group function.</li>
+<li>The level, or dimensionality, determines the level at which to perform the metric calculation. For example, you can choose to calculate at the month level or year level.</li>
+<li>Conditionality associates a filter to the metric calculation. This is an optional component.</li>
+<li>The transformation applies offset values, such as &ldquo;four months ago,&rdquo; to the selected attributes. This is also an optional component.</li>
+</ul>
+<p><strong> What is the purpose of transformation in Metrics? Types of transformation.</strong></p>
+<p>It encapsulates a business rule used to compare results of different time periods.Transformations are used in the definition of a metric to alter the behavior of the metrics.</p>
+<ul>
+<li>Expression - based transformations &ndash; You implement these transformations using a mathematical formula in Microstrategy Architect.</li>
+<li>Table - based transformations &ndash; These transformations are based on a transformation &ndash; or relate &ndash;table in the warehouse.</li>
+</ul>
+<p>What is dynamic Aggregation?</p>
+<p>Rollup metric values that occurs when an attribute is moved from the report grid to the report objects.</p>
+<p>For Eg: The report grid has Quarter and Customer City, Revenue. If we remove Quarter into the report objects then revenue should automatically roll up to Customer City.</p>
+<p>How to ensure that a particular fact table will be chosen for a metric</p>
+<p>The MSTR operates in such a way that the incoming queries and data retrievals are done from the table which has the least logical size. Thus if we prefer a specific table to be the center of activity then we should try to reduce the logical size of that specific table so that it becomes considerably lesser than the other tables.</p>
+<p><strong>In Microstrategy, how can you direct the sql generated to use a specifc table?</strong></p>
+<p>Using the Level parameter in the Metric level options</p>
+<p>Assuming you have OLAP licence,the easiest way to direct to a particular table is to create a dummy fact on the table,include the fact in metric and put the metric in report objects.</p>
+<p>How to hide a particular metric in a report for a specific user?</p>
+<p>Using Object level security</p>
+<p><strong>What is Metric Formula Join Type? How it is different with Metric Join Type?</strong></p>
+<p>Metric Formula Join Type is used for Compound Metrics and determines how the different tables used in metric formula are joined.</p>
+<p>Whereas the Metric Join Type determines how the metrics are joined to other metrics.</p>
+<p><strong>Filters</strong></p>
+<p><strong>What is filter?</strong></p>
+<p>Filter is used to restrict data in a report</p>
+<p><strong> What is report as filter?</strong></p>
+<p>In the MicroStrategy when the same filter conditions must be applied to multiple passes, the same where clause appears in each of those passes. This redundant where clause can be expensive if the filter conditions are complicated and thus involve many tables and joins. Ideally, an intermediate table populated with entries could be created to satisfy the complicated filter conditions so that the rest of the SQL statements can use that intermediate table. In that case, the where clause would be executed only once instead of multiple times and SQL performance would be improved. In this case to populate the temporary table we can use report as a filter</p>
+<p><strong>What is view filter?</strong></p>
+<p>View Filters: View Filters are the conditions that come into play before a specific result is presented to the user. Thus the view filters are not part of the SQL statements like report definitions, rather they are the filters applied after the execution of the SQL statements, after the data is retrieved from the data warehouse.</p>
+<p><strong> What is filtered prompt?</strong></p>
+<p>We can restrict the number of elements in a prompt using a filter.</p>
+<p><strong>Difference between report and view filter?</strong></p>
+<p>Report filters: report filters are the conditions that accompany the report generating SQL statements. The report definitions have the filters as part of their definition.</p>
+<p>View Filters: View Filters are the conditions that come into play before a specific result is presented to the user. Thus the view filters are not part of the SQL statements like report definitions, rather they are the filters applied after the execution of the SQL statements, after the data is retrieved from the data warehouse.</p>
+<p><strong>Difference between Report Limit and Report filter?</strong></p>
+<p>A report limit specifies a set of criteria used to restrict the data returned in the report data set after the report metrics are calculated.</p>
+<p>Report Filter applies the where condition to the query sent to warehouse to extract the results.</p>
+<p><strong>What is the difference between Absolute filtering and standard filtering?</strong></p>
+<p>When we use the absolute filtering in definition of level metric whatever data we obtain from the filter is goingto be reported as such and the the report filter will be overridden by the absolute filter settings. The standard filtering the report filter interacts with the metric filter in the normal way and what we obtain will be formatted according to the report filter settings.</p>
+<p><strong>What is a Joint Element List Filter?</strong></p>
+<p>Helps to choose combination of attribute elements from different attributes to filter a report</p>
+<p>Enables to create filters with attribute pairs as well as triplets, quadruplets and so on.</p>
+<p>This is available in the advanced qualification section of the filters</p>
+<p><strong>What is a Security filter?</strong></p>
+<p>Security filter is used to apply security at the database data level.Whenever a users associated with security filter runs a report, a WHERE clause is always included in the report sql with the condition defined in the Security Filter.</p>
+<p><strong>What is a Attribute to Attribute Filtering?</strong></p>
+<p>This is used to compare values of 2 attributes using their forms.</p>
+<p>Eg: Ship Date&lt;Day(ID)+2</p>
+<p>Prompts</p>
+<p>What is prompt?</p>
+<ul>
+<li>Used to dynamically modify the contents of a report</li>
+<li>Enormous flexibility for designing reports</li>
+<li>One report can satisfy multiple reporting requirements with prompts</li>
+<li>Allow users to select criteria for reports at run-time</li>
+</ul>
+        </div>
+		
+		  <div id="pagefour" class="tab-pane fade">
+           <h3>PROMPTS</H3>
+<p><strong>Different types of prompts?</strong></p>
+<ol>
+<li>Object: Allow users to select objects comprising a report at run-time</li>
+</ol>
+<p>Users can select from any objects to dynamically build a report</p>
+<ol start="2">
+<li>Level: Level prompts enable you to specify the level of aggregation calculation of a metric</li>
+<li>Value: Allow users to type a value</li>
+</ol>
+<p>Used in conjunction with other prompts for filters or metrics</p>
+<ol start="4">
+<li>Filter Defintion Prompt</li>
+<li>Choose from all attributes in a hierarchy</li>
+<li>Qualify on an attribute</li>
+<li>Choose from an attribute element list</li>
+<li>Qualify on a metric</li>
+</ol>
+<p><strong> What is object prompt?</strong></p>
+<p>An object prompt allows you to select which MicroStrategy objects to include in a report, such as attributes, metrics, custom groups and so on. Object prompts can either determine the definition of the report template or the report filter.</p>
+<p>What is level prompt?</p>
+<p>Level prompts enable you to specify the level of aggregation calculation of a metric</p>
+<p><strong>Can we use hierarchy in prompt?</strong></p>
+<p>Yes we can use.</p>
+<p>Report</p>
+<p>What is the purpose of having thresholds in report?</p>
+<p>Used to create conditional formatting for metric values.</p>
+<p>Two metric and one attribute &ndash; How will the SQL look if the metrics are from same tables and are from different tables?</p>
+<p>If the two metrics are sourced from the same table then only one pass will come.</p>
+<p>If they are sourced from different fact tables then a pass will be generated for each metric and in the final pass the data will be aggregated,</p>
+<p>Difference between drill map and drill path. What is drill to template</p>
+<p>Drill maps allow you to create fully customized drill paths that are available to your users while drilling on a report. By default, the paths available are based on the system Hierarchy of the project. You can create custom drill maps that can override these defaults.</p>
+<p>Difference between Consolidation and Custom Groups. How will they affect SQL ? Which is more expensive operation.</p>
+<p>Custom Groups are handled at the database end where as Consolidations are handled at the Analytical Engine end. As a result the Consolidations are not an overhead for the database as there is a single pass in the query. On the other hand Custom Groups are an overhead on the database as they fire a separate SQL pass for every Custom group element.</p>
+<p>A custom group is a set of special filters that can be placed on a template. It is made up of an ordered collection of elements called custom group elements. Consolidations are used to specify the data you want to view in your report. They allow you to group attribute elements in new ways without changing the metadata and warehouse definitions.</p>
+<p><strong>Difference between page by and outline mode?</strong></p>
+<p>Page by enables to select and display subsets of report results as separate pages.</p>
+<p>Outline mode enables indented grouping of related attributes This is useful when we want to display the same report at different levels quickly.</p>
+<p>How can we enable caching in reports? Different types by which we can implement caching?</p>
+<p>Caching can be enabled/disabled at project or report level. However the report level setting will override the project level setting.</p>
+<p>Using Project Configuration we can enable the caching else in report &ndash; using caching options we can enable or disable the caching.</p>
+<p>Templates can also be used for caching. Using a common template for developing common reports will help to fetch report data faster.</p>
+<p>Can Threshold be applied on attributes? What are the different formatting types?</p>
+<ol>
+<li>Font Type, Color</li>
+<li>Background</li>
+<li>Image</li>
+<li>Text</li>
+</ol>
+<p><strong>What are adhoc reports and static reports?</strong></p>
+<p>Adhoc reports run in real time based on the input parameters provided by the user at the run time.In Microstrategy, adhoc reports are created using Prompts.</p>
+<p>In static reports, users won't be provide any input parameters.These reports are usaully schedule to run overnight and ready to view immediatley in the mornings using cache.</p>
+<p>Tables</p>
+<p><strong>How to handle table structure change in DB to be reflected in MSTR?</strong></p>
+<p>Update the warehouse catalog.</p>
+<p>Modify the data type in attribute editor.</p>
+<p>When a column name changes in a table how do we handle it in MSTR</p>
+<ol>
+<li>Remove the association of the column from the respective attributes.</li>
+<li>Go to warehouse catalog and update the structure</li>
+<li>Update the schema</li>
+<li>Associate the attributes to the new column name. Save</li>
+<li>Update the schema</li>
+</ol>
+<p><strong>How to we add tables into a schema</strong></p>
+<ol>
+<li>Warehouse catalog</li>
+<li>Architect</li>
+</ol>
+<p>When you add a physical table from the datawarehouse into the project, MSTR creates a corresponding logical table in the metadata. Physical table stores the actual data whereas the logical data stores information about their corresponding physical tables including column names, data type and schema objects associated with the column names.</p>
+<p>There are two views - the physical view and the logical view in the table editor. The logical view shows the attributes and facts mapped whereas the physical view shows the columns and corresponding data types.</p>
+<p><strong>What is a logical size of a table and what does it depend on?</strong></p>
+<p>Logical size is Microstrategy way of generating the best suitable/optimized SQL to fetch the required data. Microstrategy follows an algorithm to calculate the logical size of a table, which depends on the no of attributes and facts based on the table and also the position of those attributes in the system hierarchy.</p>
+<p><strong>What are Logical Views used for?</strong></p>
+<p>Logical Views allows application architects to create any desired view using MicroStrategy, without DBA involvement. Once these Logical views are created, they are available to the report designer in a way similar to any other table. This allows developers to model attributes and facts whose expressions span multiple tables</p>
+<p>Other Questions</p>
+<p><strong>What is the data modelling tool in MSTR called?</strong></p>
+<p><strong>Architect</strong></p>
+<p><strong>How do we migrate objects across projects?</strong></p>
+<p><strong>Object Manager</strong></p>
+<p><strong>What is the difference between object manager and project merge?</strong></p>
+<ul>
+<li><strong> Object Manager can move just a few objects or just the objects in a few folders. Project Merge</strong> moves all the objects in a project.</li>
+<li>Object Manager must locate the dependents of the copied objects and then determine their differences before performing the copy operation. Project Merge does not do a dependency search, since all the objects in the project are to be copied.</li>
+<li>Project Merge can be run from the command prompt in Microsoft Windows.</li>
+</ul>
+</P>
+        </div>
+		
+		  <div id="pagefive" class="tab-pane fade">
+            <h3>Attribute Element and Caches</h3>
+           <p>Used by attribute element list.</p>
+<p><strong>When is it created?</strong></p>
+<ol>
+<li>Browse attribute elements when browsing a hierarchy</li>
+<li>Browsing a prompt</li>
+<li>In Filter Editor</li>
+<li>Object Cache : when you open the editor of an object</li>
+</ol>
+<p><strong>When is it created?</strong></p>
+<ol>
+<li>Opening a report editor</li>
+<li>Opening a attribute/fact /metric editor</li>
+</ol>
+<ol start="3">
+<li>Report Cache : when executing a report</li>
+</ol>
+<p>Matching and History - Types</p>
+<ol start="4">
+<li>Document Cache : when executing a document</li>
+</ol>
+<p><strong>How to resolve many to many relationships?</strong></p>
+<p>To resolve a many-to-many relationship means to convert it into two one-to-many, many-to-one relationships. A new entity comes between the two original entities, and this new entity is referred to as an intersection entity or cross reference entity. It allows for every possible matched occurrence of the two entities. For example, the "many-to-many" relationship of many EMPLOYEEs are assigned many TASKs which can be resolved by creating a new entity named EMPLOYEE_TASK. This resolves the "many-to-many" relationship by creating two separate "one-to-many" relationships. The two "one-to-many" relationships are EMPLOYEE or parent entity which is assigned EMPLOYEE_TASK or child entity and TASK or parent entity is assigned to EMPLOYEE_TASK or child entity. Whilst this may appear complex, the introduction of the EMPLOYEE_TASK child entity reduces data redundancy and improves overall database and application performance.</p>
+<p><strong>Major Differences between 8 and 9</strong></p>
+<ol>
+<li>Distribution Services is new in 9</li>
+<li>Ability to create prompts and filters in web</li>
+<li>Drilling in Documents</li>
+<li>Dashboards with multiple layouts</li>
+<li>Intelligent Cubes</li>
+<li>Back and Forward buttons in web</li>
+<li>Personalised prompt answers</li>
+</ol>
+<p><strong>What is evaluation ordering?</strong></p>
+<p>Determines the order in which Analytical Engine performs different kinds of calculations.</p>
+<p>Can be set at: Project, Report, Template</p>
+<p><strong>Default Ordering</strong></p>
+<ol>
+<li>Subtotal</li>
+<li>Compound Metrics</li>
+<li>Consolidation</li>
+<li>Metric Limit</li>
+</ol>
+<p><strong>User Defined Ordering</strong></p>
+<ol>
+<li>Compound Metrics</li>
+<li>Consolidation</li>
+<li>Metric Limit</li>
+<li>Subtotal</li>
+</ol>
+<p><strong>What are the VLDB properties?</strong></p>
+<p>Very Large Scale Database Properties.</p>
+<p>Governing: Intermediate Row Limit, Maximum SQL/MDX size, result set row limit</p>
+<p>Joins</p>
+<p>Attribute to join when key from neither side can be supported by the other side</p>
+<p>Possible Values: - Join common key on both sides, Join common attributes (reduced) on both sides</p>
+<p>Base Table Join for Template: Controls how fact tables are joined, for a report containing metrics from different fact tables, or for a compound metric which has the base metrics coming from different fact tables. Controls whether temporary tables will be created for each metric or if fact tables will be directly joined.</p>
+<p>Downward Outer Join Option: Controls how joins are performed when joining metrics which are calculated at different levels.</p>
+<p>Full Outer Join Support: Controls the property which informs the Engine if a full outer join is supported by the Target database.</p>
+<p>Preserve All Final Pass Result Elements: Controls how final pass result elements are joined to Lookup/Relationship tables</p>
+<p>Preserve all Lookup Table Elements: Provides users the option to control if all lookup table elements should be included in the final results.</p>
+<p>Metrics</p>
+<p>Metric Join Type: Controls the type of join that is used to join a metric's data with other metric data on a report.</p>
+<p>Default to Metric Name</p>
+<p>Null Check</p>
+<p>Query Optimizations</p>
+<p>SQL Global Optimization: Determines if SQL should be optimized by combining multiple passes, and it should be optimized, controls the level of optimization</p>
+<p>- Level 0: No optimization.</p>
+<p>- Level 1: Remove Unused and Duplicate Passes.</p>
+<p>- Level 2: Level 1 + Merge Passes with Different SELECT</p>
+<p>WHERE clause driving table: Controls which table the Engine should use to apply the filter (WHERE clause). By default Fact Table is used</p>
+<p>Intelligent Cubes</p>
+<p>What is an Intelligent Cube?</p>
+<p>In-memory version of report data that can be manipulated by the MicroStrategy Analytical Engine?</p>
+<p>Types of Cubes</p>
+<p>Two unique methods to implement Intelligent Cube Technology:</p>
+<ul>
+<li>Personal Intelligent Cubes: You can begin by creating reports in MicroStrategy as usual, and then analyze your reports with OLAP Services features such as view filters, derived metrics, and derived elements. These features are processed on the in-memory copy of data known as a personal Intelligent Cube, rather than processed on the data warehouse.</li>
+<li>Intelligent Cubes: Rather than returning data from the data warehouse for a single report, you can return sets of data from your data warehouse and save them directly to Intelligence Server memory. These sets of data can be shared as a single in-memory copy, to be used by many different reports created by multiple users.</li>
+</ul>
+<p>Activities on Cubes</p>
+<ol>
+<li>Dynamic Aggregation</li>
+<li>Derived Metrics</li>
+<li>Derived Elements</li>
+<li>Metric Filters and View Filters</li>
+</ol>
+<p>Advantages of Cubes</p>
+<p>&nbsp;</p>
+<ol>
+<li>Fast Performance</li>
+<li>Scheduling the Cube</li>
+<li>Drilling</li>
+<li>Data Sharing</li>
+</ol>
+<p><strong>Difference between Standard and OLAP reports</strong></p>
+<p>If none of the OLAP features are used then it is a standard report, once any feature is added like view filter, derived metrics then its converted to a OLAP report. A Standard report can be converted to OLAP but not vice versa.</p>
+<p>Difference between Personal Intelligent Cube and Intelligent Cube</p>
+<ol>
+<li>In PIC, Full access to re execute data against the warehouse but in IC , in order to re-execute against the warehouse , we have to drill on the data.</li>
+<li>PIC is linked to a single report whereas multiple reports can access a IC.</li>
+<li>Both view and report filters can be used in PIC but only view filters can be used in IC</li>
+<li>In IC, prompts can be used only on objects included in IC but in PIC it can be applied even on objects not in the prompt.</li>
+<li>Security Filters can be applied on both IC and PIC.</li>
+<li>Consolidations and Custom Groups cannot be used in reports using IC but this can be achieved by using derived elements</li>
+<li>Derived elements can be used only on IC not on PIC.</li>
+</ol>
+<p><strong>Features not supported in Intelligent Cubes</strong></p>
+<ol>
+<li>Consolidation and Custom Group</li>
+<li>OLAP Service Features: View Filters and Derived metrics cannot be used</li>
+<li>Prompts cannot be used</li>
+</ol>
+<p>What is dynamic sourcing?</p>
+<p>Dynamic sourcing extends the accessibility of Intelligent Cubes by allowing standard reports to access any published Intelligent Cubes that can satisfy the data requirements of the report</p>
+<p>How to Unpublish and Intelligent Cube?</p>
+<p>From the Folder List, expand Administration, then expand System Monitors, then expand Caches, and select Intelligent Cubes. The Intelligent Cube Monitor is displayed. Right-click an Intelligent Cube and select Delete. Unpublish only deletes data in the cube but not the cube itself.</p>
+<p>When does the report fails due to the unavailability of Intelligent Cubes?</p>
+<ol>
+<li>When I Cube is not published</li>
+<li>When enough space is not there for publishing</li>
+<li>Cube is in the process of publishing</li>
+<li>Cube is offline</li>
+</ol>
+<p><strong> What are the different types of derived elements?</strong></p>
+<ol>
+<li>Group Derived: A Group derived element is a combination of attribute elements into a single derived element.</li>
+</ol>
+<p>Eg: East Coast: Groups the Mid-Atlantic, Northeast, and Southeast attribute elements.West Coast: Groups the Northwest and Southwest attribute elements</p>
+<ol start="2">
+<li>Filter Derived: A Filter derived element uses a filter qualification to determine the combination of attribute elements for a derived element.</li>
+</ol>
+<p>For Eg: Southern Regions: Returns attribute elements whose name begins with South.</p>
+<ul>
+<li>Northern Regions: Returns attribute elements whose name begins with North.</li>
+</ul>
+<ol start="3">
+<li>Calculation Derived: A Calculation derived element uses operators and functions to combine attribute elements and derived elements into calculations that define a single derived element</li>
+</ol>
+<p>All other derived elements: Collects all attribute elements that are not inclulded in derived elements and includes them as individual attribute elements by default</p>
+        </div>
+		
+		  <div id="pagesix" class="tab-pane fade">
+            <h3>Report Service Document</h3>
+            <p></p>
+<p><strong>What is a document?</strong></p>
+<p>A document displays your organization&rsquo;s data in a format that is similar to a PowerPoint presentation, where several grid and graph reports can be viewed at the same time, along with images and text. High-quality, Pixel Perfect&trade; documents allow you to display your business data in a user-friendly way that is suitable for presentation to management for boardroom-quality material. Examples of documents include scorecards and dashboards, managed metrics documents, production and operational documents, and more</p>
+<p>What are the different export formats?</p>
+<p>Excel, PDF, Flash, HTML</p>
+<p>What are the different view modes?</p>
+<p>Flash View</p>
+<p>HTML View</p>
+<p>Design View</p>
+<p>What is a dataset?</p>
+<p>A dataset is a MicroStrategy report that defines the data that the Intelligence Server should retrieve from your data warehouse or from a cache that is available to the document.</p>
+<p><strong>What is a hyperlink?</strong></p>
+<p>A hyperlink connects text or an image in a document to a web page (the target of the hyperlink). When the document is open in PDF View, as shown below, the cursor changes to a hand when you hover the cursor over text that contains a hyperlink.</p>
+<p><strong>What is grouping of data in document?</strong></p>
+<p>If the data is grouped by page, drop-down lists are displayed at the top of the screen,</p>
+<p><strong>What is a layout?</strong></p>
+<p>A multi-layout document contains multiple documents, each in its own layout, creating a &ldquo;book&rdquo; of documents. Each layout functions as a separate document, with its own grouping, page setup, and so on, but the layouts are generated into a single PDF document. If a document contains multiple layouts, tabs are displayed at the top of the screen.</p>
+<p><strong>What is a dashboard?</strong></p>
+<p>A dashboard is commonly only one page long, is intended to be viewed online, and usually provides interactive features that let analysts change how they view the dashboard&rsquo;s data. By being only one page long, a dashboard makes it easy to view the whole document at one time and see all the information. A dashboard allows interactivity from users, so each user can change how they see the data, within the limits of what the dashboard allows them. You must view a dashboard in Flash View in MicroStrategy Web to be able to interact with its widgets, selectors, and panel stacks</p>
+<p><strong>Difference between Dashboard and Scorecard - Click Here</strong></p>
+<p><strong>What are the different display modes?</strong></p>
+<p><strong>View Mode: view the results</strong></p>
+<p>Cannot create a new document.</p>
+<ul>
+<li>Cannot edit an existing document.</li>
+<li>Cannot manipulate any objects on the document, as you can in any of the other display modes.</li>
+</ul>
+<p><strong>Interactive Mode</strong></p>
+<p>Edit an existing document.</p>
+<ul>
+<li>View the results of the document.</li>
+<li>Use selectors to flip through the panels in a panel stack or display different attribute elements or metrics in a grid or graph report displayed on the document.</li>
+<li>Format grid and graph reports.</li>
+<li>Sort grid reports and pivot report objects on them.</li>
+<li>Add totals.</li>
+<li>Resize rows and columns.</li>
+<li>Create metrics based on report objects already on the grid report.</li>
+<li>Optimized for dashboard viewing.</li>
+</ul>
+<p>Cannot create a new document.</p>
+<ul>
+<li>Cannot format the layout and positioning of objects or the entire document.</li>
+<li>Cannot format the Flash properties of widgets.</li>
+</ul>
+<p><strong>Flash Mode</strong></p>
+<p>Access and interact with features provided by Flash, such as widgets. Widgets are interactive Flash-only graphs, such as gauges and time series slides, that dynamically update when you select a new set of data.</p>
+<ul>
+<li>Format widget Flash properties.</li>
+<li>Edit an existing document.</li>
+<li>View the results of the document.</li>
+<li>Use selectors to flip through the panels in a panel stack or display different attribute elements or metrics in a grid or graph report displayed on the report.</li>
+<li>Sort grid reports and pivot report objects on them</li>
+</ul>
+<p>Cannot create a new document.</p>
+<ul>
+<li>Cannot manipulate or format grid or graph reports, except to sort and pivot objects on them.</li>
+<li>If a graph report uses a graph type that is not supported in Flash, the graph is not displayed</li>
+</ul>
+<p><strong>What are controls?</strong></p>
+<p>Controls are the objects that display the data, images, and shapes in a document; they are the objects shown in the document&rsquo;s Layout area as you design the document.</p>
+<ol>
+<li>Text Fields</li>
+<li>HTML container</li>
+<li>Line or Rectangle</li>
+<li>Image</li>
+<li>Grid/Graph</li>
+<li>Panel stack, which is a holder for a collection of panels, or layers of data, in a document. A user can navigate or flip through the panels in a panel stack; only one panel is displayed at a time.</li>
+<li>Selector, which allows users to interact with the document, by flipping through the panels in a panel stack or by displaying different attributes or metrics in a Grid/Graph</li>
+<li>Widget, which displays the results of a dataset report in Flash in MicroStrategy Web, allowing users to visualize data in different ways than traditional reports displayed as Grid/Graphs do</li>
+</ol>
+<p>In documents, Information about the document (such as page numbers) and the dataset reports (such as report names and filter information), what is it called? &ndash;</p>
+<p><strong>Auto Text Codes</strong></p>
+<p>What are the different sections in a document?</p>
+<ol>
+<li>Page Header and Footer</li>
+<li>Document Header and Footer</li>
+<li>Detail Header and Footer</li>
+</ol>
+<p>What are the different types of text field in a document?</p>
+<p>Static text: This text does not change and is commonly used for labels or descriptions. Examples in the sample document are the words &ldquo;Employee&rdquo; and &ldquo;Revenue&rdquo;. For directions to add static text, see Adding static text to a document</p>
+<ul>
+<li>Dynamic text: This text is automatically populated by the document or dataset. Dynamic text is always included within braces { }.</li>
+</ul>
+<p>There are two types of dynamic text:</p>
+<p>Data field</p>
+<p>Auto text code</p>
+<p>Eg: Date/time: {&amp;DATETIME}</p>
+<p>What are the different types of metrics that can be created within a document?</p>
+<p>Calculated expressions: A calculated expression is a metric that is calculated dynamically, when the document is executed, directly from metrics on a document dataset Eg: Revenue - Cost</p>
+<p>Derived metrics: A derived metric is a metric that is obtained dynamically, when a document is executed, directly from metrics on a document dataset. A derived metric is created using at least one of the metrics in the document</p>
+<p><strong>Summary metrics.</strong></p>
+<p>What are the issues faced when exporting reports/documents to excel?</p>
+<p>Choose Excel-compatible colors for objects as well as grid and graph formatting. MicroStrategy Desktop's basic set of 40 colors matches the Excel colors. Color from the Advanced Color Picker will be matched by Microsoft Excel with more or less accuracy.</p>
+<p>Use graphs that are supported by Microsoft Excel. Examples of non-supported graphs are gauge graphs and combination graphs.Lines and rectangles are not supported when exporting to Microsoft Excel. As a workaround, use a text field border to create a line or a rectangle.</p>
+<p>A line graph within a Report Services document changes color when exported to excel. [Fixed in 9.3]</p>
+<p>When exporting Report Services documents with objects that are overlapped, unexpected behavior is seen as Microsoft Excel does not support this feature and priority might be given to one of the overlapped objects.</p>
+<p>Word-wrapping specified for multi-word object names does not take effect in PDF or Excel.</p>
+<p>Custom line in a graph report is not carried over when exporting to Microsoft Excel as a Live Chart [Not sure if its fixed now]</p>
+<p>The secondary axis on a dual axis graph report is not displayed when exporting the report to Excel format with the option "Export graphs as live Excel charts".Hence don't export a graph report as live chart in Excel format when exporting it.</p>
+<p>Banding does not display correctly when exporting reports to Excel 2007 and above from MicroStrategy 9.2.1 Desktop and Web. Change the excel options such that you can export to older versions.</p>
+<p>Prompt details are not fully displayed when exporting to Microsoft Excel 2007 from MicroStrategy Web 9.2.1.Change the excel options such that you can export to older versions.</p>
+<p>Metric values will still appear despite column width set to 0 when exported to Excel 2007 in MicroStrategy version 9.2.1. Use excel 2003 to workaround.</p>
+<p>Stacked Bar graph becomes Clustered Bar graph when exporting a Report Services document to Excel in MicroStrategy Web 9.2.1.</p>
+<p>A Report Services document that includes attributes which use the date or datetime datatype. When the document is exported to Microsoft Excel, the attributes are recognized as plain text instead of dates, thereby inhibiting the use of certain pivot functions in Microsoft Excel native to the date format.</p>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>                                		
